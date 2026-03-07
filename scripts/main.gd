@@ -221,7 +221,7 @@ func spawn_pc():
 		return
 	
 	# Náhodný výber jedného voľného spawn pointu
-	# Zabezpečuje variabilitu rozloženia PC
+	# Zabezpečuje variabilitu rozloženia 
 	var chosen = available.pick_random()
 	# Označenie tohto spawn pointu ako obsadeného
 	# Zabraňuje spawnnutiu viacerých PC na rovnaké miesto
