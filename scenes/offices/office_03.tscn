@@ -1,0 +1,219 @@
+[gd_scene load_steps=4 format=3 uid="uid://sbb7sawi7k4h"]
+
+[ext_resource type="Script" uid="uid://bl6saqu381ysw" path="res://scripts/has_server.gd" id="1_exfac"]
+[ext_resource type="Script" uid="uid://bglgi6caj3acx" path="res://scripts/spawn_point.gd" id="1_vyy0t"]
+[ext_resource type="TileSet" uid="uid://k3mqn2xvujpu" path="res://sprites/tileset.tres" id="2_srox1"]
+
+[node name="Office_03" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_exfac")
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+tile_set = ExtResource("2_srox1")
+rendering_quadrant_size = 8
+format = 2
+layer_0/tile_data = PackedInt32Array(131074, 262144, 11, 0, 720896, 13, 1, 786432, 13, 2, 720896, 13, 3, 786432, 13, 4, 720896, 13, 6, 720896, 13, 5, 786432, 13, 7, 786432, 13, 9, 786432, 13, 8, 720896, 13, 10, 720896, 13, 11, 524288, 12, 12, 393216, 11, 13, 393216, 11, 14, 393216, 11, 15, 393216, 11, 16, 393216, 11, 17, 393216, 11, 18, 393216, 11, 19, 327680, 11, 65536, 786432, 13, 131072, 720896, 13, 196608, 524288, 12, 262144, 720896, 13, 327680, 786432, 13, 393216, 720896, 13, 458752, 786432, 13, 524288, 720896, 13, 589824, 786432, 13, 655360, 720896, 13, 720896, 786432, 13, 786432, 720896, 13, 851968, 786432, 13, 917504, 720896, 13, 983040, 786432, 13, 1048576, 720896, 13, 1114112, 786432, 13, 1179648, 720896, 13, 1245184, 786432, 13, 1245185, 720896, 13, 1245186, 786432, 13, 1245187, 720896, 13, 1245188, 786432, 13, 1245189, 720896, 13, 1245190, 786432, 13, 1245191, 720896, 13, 1245192, 786432, 13, 1245193, 720896, 13, 1245194, 786432, 13, 1245195, 720896, 13, 1245196, 786432, 13, 1245197, 720896, 13, 1245198, 786432, 13, 1245199, 720896, 13, 1245200, 786432, 13, 1245201, 720896, 13, 1245202, 786432, 13, 1245203, 720896, 13, 65555, 458752, 11, 131091, 786432, 13, 196627, 458752, 12, 262163, 393216, 12, 327699, 393216, 12, 393235, 393216, 12, 458771, 393216, 12, 524307, 458752, 11, 589843, 720896, 13, 655379, 786432, 13, 720915, 720896, 13, 786451, 786432, 13, 851987, 720896, 13, 917523, 786432, 13, 983059, 720896, 13, 1048595, 786432, 13, 1114131, 720896, 13, 1179667, 786432, 13, 65537, 720896, 13, 131073, 786432, 13, 196609, 393216, 11, 262145, 786432, 13, 327681, 720896, 13, 393217, 786432, 13, 458753, 524288, 12, 524289, 786432, 13, 589825, 524288, 12, 655361, 786432, 13, 720897, 720896, 13, 786433, 786432, 13, 851969, 720896, 13, 917505, 786432, 13, 983041, 720896, 13, 1048577, 786432, 13, 1114113, 720896, 13, 1179649, 786432, 13, 65538, 786432, 13, 196610, 196608, 12, 262146, 393216, 12, 327682, 262144, 12, 393218, 720896, 13, 458754, 327680, 11, 524290, 393216, 12, 589826, 196608, 12, 655362, 393216, 12, 720898, 393216, 12, 786434, 393216, 12, 851970, 393216, 12, 917506, 393216, 12, 983042, 393216, 12, 1048578, 393216, 12, 1114114, 262144, 12, 1179650, 720896, 13, 65539, 720896, 13, 131075, 393216, 11, 196611, 720896, 13, 262147, 786432, 13, 327683, 393216, 11, 393219, 786432, 13, 458755, 720896, 13, 524291, 786432, 13, 589827, 720896, 13, 655363, 786432, 13, 720899, 720896, 13, 786435, 786432, 13, 851971, 720896, 13, 917507, 786432, 13, 983043, 720896, 13, 1048579, 786432, 13, 1114115, 393216, 11, 1179651, 786432, 13, 65540, 786432, 13, 131076, 393216, 11, 196612, 786432, 13, 262148, 720896, 13, 327684, 393216, 11, 393220, 720896, 13, 458756, 786432, 13, 524292, 720896, 13, 589828, 786432, 13, 655364, 720896, 13, 720900, 786432, 13, 786436, 720896, 13, 851972, 786432, 13, 917508, 720896, 13, 983044, 786432, 13, 1048580, 720896, 13, 1114116, 393216, 11, 1179652, 720896, 13, 65541, 720896, 13, 131077, 393216, 11, 196613, 720896, 13, 262149, 786432, 13, 327685, 327680, 11, 393221, 393216, 12, 458757, 131072, 11, 524293, 393216, 12, 589829, 458752, 11, 655365, 786432, 13, 720901, 720896, 13, 786437, 524288, 12, 851973, 720896, 13, 917509, 458752, 12, 983045, 458752, 11, 1048581, 786432, 13, 1114117, 393216, 11, 1179653, 786432, 13, 65542, 786432, 13, 131078, 393216, 11, 196614, 786432, 13, 262150, 720896, 13, 327686, 786432, 13, 393222, 720896, 13, 458758, 393216, 11, 524294, 720896, 13, 589830, 786432, 13, 655366, 720896, 13, 720902, 786432, 13, 786438, 393216, 11, 851974, 786432, 13, 917510, 720896, 13, 983046, 786432, 13, 1048582, 720896, 13, 1114118, 524288, 11, 1179654, 720896, 13, 65543, 720896, 13, 131079, 393216, 11, 196615, 720896, 13, 262151, 786432, 13, 327687, 720896, 13, 393223, 786432, 13, 458759, 393216, 11, 524295, 786432, 13, 589831, 720896, 13, 655367, 786432, 13, 720903, 720896, 13, 786439, 393216, 11, 851975, 720896, 13, 917511, 786432, 13, 983047, 720896, 13, 1048583, 786432, 13, 1114119, 720896, 13, 1179655, 786432, 13, 65544, 786432, 13, 131080, 327680, 11, 196616, 393216, 12, 262152, 393216, 12, 327688, 458752, 11, 393224, 720896, 13, 458760, 393216, 11, 524296, 720896, 13, 589832, 786432, 13, 655368, 720896, 13, 720904, 786432, 13, 786440, 393216, 11, 851976, 786432, 13, 917512, 720896, 13, 983048, 262144, 11, 1114120, 262144, 12, 1179656, 720896, 13, 65545, 720896, 13, 131081, 786432, 13, 196617, 720896, 13, 262153, 786432, 13, 327689, 720896, 13, 393225, 786432, 13, 458761, 393216, 11, 524297, 786432, 13, 589833, 720896, 13, 655369, 458752, 12, 720905, 393216, 12, 786441, 131072, 12, 851977, 720896, 13, 917513, 786432, 13, 983049, 524288, 11, 1048585, 786432, 13, 1114121, 393216, 11, 1179657, 786432, 13, 65546, 786432, 13, 131082, 720896, 13, 196618, 786432, 13, 262154, 720896, 13, 327690, 786432, 13, 393226, 720896, 13, 458762, 393216, 11, 524298, 720896, 13, 589834, 786432, 13, 655370, 720896, 13, 720906, 786432, 13, 786442, 393216, 11, 851978, 786432, 13, 917514, 720896, 13, 983050, 786432, 13, 1048586, 720896, 13, 1114122, 393216, 11, 1179658, 720896, 13, 65547, 720896, 13, 131083, 524288, 12, 196619, 720896, 13, 262155, 786432, 13, 327691, 720896, 13, 393227, 786432, 13, 458763, 196608, 11, 524299, 393216, 12, 589835, 458752, 11, 655371, 786432, 13, 720907, 720896, 13, 786443, 196608, 11, 851979, 393216, 12, 917515, 393216, 12, 983051, 393216, 12, 1048587, 393216, 12, 1114123, 131072, 12, 1179659, 786432, 13, 65548, 786432, 13, 131084, 393216, 11, 196620, 786432, 13, 262156, 458752, 12, 327692, 393216, 12, 393228, 393216, 12, 458764, 131072, 12, 524300, 720896, 13, 589836, 786432, 13, 655372, 720896, 13, 720908, 786432, 13, 786444, 393216, 11, 851980, 786432, 13, 917516, 720896, 13, 983052, 786432, 13, 1048588, 720896, 13, 1114124, 524288, 11, 1179660, 720896, 13, 65549, 720896, 13, 131085, 393216, 11, 196621, 720896, 13, 262157, 786432, 13, 327693, 720896, 13, 393229, 786432, 13, 458765, 393216, 11, 524301, 786432, 13, 589837, 720896, 13, 655373, 786432, 13, 720909, 720896, 13, 786445, 393216, 11, 851981, 720896, 13, 917517, 786432, 13, 983053, 720896, 13, 1048589, 786432, 13, 1114125, 720896, 13, 1179661, 786432, 13, 65550, 786432, 13, 131086, 393216, 11, 196622, 786432, 13, 262158, 720896, 13, 327694, 786432, 13, 393230, 720896, 13, 458766, 327680, 11, 524302, 393216, 12, 589838, 458752, 11, 655374, 720896, 13, 720910, 786432, 13, 786446, 393216, 11, 851982, 786432, 13, 917518, 458752, 12, 983054, 262144, 12, 1048590, 720896, 13, 1114126, 524288, 12, 1179662, 720896, 13, 65551, 720896, 13, 131087, 393216, 11, 196623, 720896, 13, 262159, 786432, 13, 327695, 720896, 13, 393231, 786432, 13, 458767, 720896, 13, 524303, 786432, 13, 589839, 720896, 13, 655375, 786432, 13, 720911, 720896, 13, 786447, 393216, 11, 851983, 720896, 13, 917519, 786432, 13, 983055, 393216, 11, 1048591, 786432, 13, 1114127, 393216, 11, 1179663, 786432, 13, 65552, 786432, 13, 131088, 393216, 11, 196624, 786432, 13, 262160, 720896, 13, 327696, 786432, 13, 393232, 720896, 13, 458768, 786432, 13, 524304, 720896, 13, 589840, 786432, 13, 655376, 720896, 13, 720912, 786432, 13, 786448, 393216, 11, 851984, 786432, 13, 917520, 720896, 13, 983056, 393216, 11, 1048592, 720896, 13, 1114128, 393216, 11, 1179664, 720896, 13, 65553, 720896, 13, 131089, 327680, 11, 196625, 393216, 12, 262161, 393216, 12, 327697, 458752, 11, 393233, 786432, 13, 458769, 720896, 13, 524305, 458752, 12, 589841, 393216, 12, 655377, 393216, 12, 720913, 393216, 12, 786449, 196608, 12, 851985, 393216, 12, 917521, 393216, 12, 983057, 196608, 12, 1048593, 393216, 12, 1114129, 327680, 12, 1179665, 786432, 13, 65554, 786432, 13, 131090, 720896, 13, 196626, 786432, 13, 262162, 720896, 13, 327698, 786432, 13, 393234, 720896, 13, 458770, 786432, 13, 524306, 720896, 13, 589842, 786432, 13, 655378, 720896, 13, 720914, 786432, 13, 786450, 720896, 13, 851986, 786432, 13, 917522, 720896, 13, 983058, 786432, 13, 1048594, 720896, 13, 1114130, 786432, 13, 1179666, 720896, 13, 1048584, 393216, 12)
+
+[node name="ServerSpawn" type="Marker2D" parent="."]
+position = Vector2(80, 72)
+
+[node name="SpawnPoints" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="SpawnPoint_01" type="Marker2D" parent="SpawnPoints"]
+y_sort_enabled = true
+position = Vector2(28, 132)
+script = ExtResource("1_vyy0t")
+facing = "up"
+
+[node name="SpawnPoint_02" type="Marker2D" parent="SpawnPoints"]
+y_sort_enabled = true
+position = Vector2(12, 124)
+script = ExtResource("1_vyy0t")
+facing = "left"
+
+[node name="SpawnPoint_03" type="Marker2D" parent="SpawnPoints"]
+y_sort_enabled = true
+position = Vector2(28, 28)
+script = ExtResource("1_vyy0t")
+facing = "right"
+
+[node name="SpawnPoint_04" type="Marker2D" parent="SpawnPoints"]
+y_sort_enabled = true
+position = Vector2(44, 36)
+script = ExtResource("1_vyy0t")
+facing = "up"
+
+[node name="SpawnPoint_05" type="Marker2D" parent="SpawnPoints"]
+y_sort_enabled = true
+position = Vector2(28, 36)
+script = ExtResource("1_vyy0t")
+facing = "right"
+
+[node name="SpawnPoint_06" type="Marker2D" parent="SpawnPoints"]
+y_sort_enabled = true
+position = Vector2(60, 28)
+script = ExtResource("1_vyy0t")
+
+[node name="SpawnPoint_07" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(52, 12)
+script = ExtResource("1_vyy0t")
+facing = "up"
+
+[node name="SpawnPoint_08" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(124, 28)
+script = ExtResource("1_vyy0t")
+
+[node name="SpawnPoint_09" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(100, 92)
+script = ExtResource("1_vyy0t")
+facing = "up"
+
+[node name="SpawnPoint_10" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(132, 116)
+script = ExtResource("1_vyy0t")
+facing = "left"
+
+[node name="SpawnPoint_11" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(76, 148)
+script = ExtResource("1_vyy0t")
+
+[node name="SpawnPoint_12" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(124, 148)
+script = ExtResource("1_vyy0t")
+
+[node name="SpawnPoint_13" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(52, 68)
+script = ExtResource("1_vyy0t")
+
+[node name="SpawnPoint_14" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(28, 100)
+script = ExtResource("1_vyy0t")
+facing = "right"
+
+[node name="SpawnPoint_15" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(36, 148)
+script = ExtResource("1_vyy0t")
+
+[node name="SpawnPoint_16" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(44, 12)
+script = ExtResource("1_vyy0t")
+facing = "up"
+
+[node name="SpawnPoint_17" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(148, 76)
+script = ExtResource("1_vyy0t")
+facing = "right"
+
+[node name="SpawnPoint_18" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(76, 132)
+script = ExtResource("1_vyy0t")
+facing = "right"
+
+[node name="SpawnPoint_19" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(100, 108)
+script = ExtResource("1_vyy0t")
+facing = "right"
+
+[node name="SpawnPoint_20" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(148, 100)
+script = ExtResource("1_vyy0t")
+facing = "right"
+
+[node name="SpawnPoint_21" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(148, 124)
+script = ExtResource("1_vyy0t")
+facing = "right"
+
+[node name="SpawnPoint_22" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(108, 52)
+script = ExtResource("1_vyy0t")
+facing = "right"
+
+[node name="SpawnPoint_23" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(108, 12)
+script = ExtResource("1_vyy0t")
+facing = "up"
+
+[node name="SpawnPoint_24" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(116, 12)
+script = ExtResource("1_vyy0t")
+facing = "up"
+
+[node name="SpawnPoint_25" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(28, 12)
+script = ExtResource("1_vyy0t")
+facing = "up"
+
+[node name="SpawnPoint_26" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(28, 60)
+script = ExtResource("1_vyy0t")
+facing = "right"
+
+[node name="SpawnPoint_27" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(12, 68)
+script = ExtResource("1_vyy0t")
+facing = "left"
+
+[node name="SpawnPoint_28" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(60, 108)
+script = ExtResource("1_vyy0t")
+
+[node name="SpawnPoint_29" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(52, 108)
+script = ExtResource("1_vyy0t")
+
+[node name="SpawnPoint_30" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(92, 52)
+script = ExtResource("1_vyy0t")
+facing = "up"
+
+[node name="SpawnPoint_31" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(108, 92)
+script = ExtResource("1_vyy0t")
+facing = "up"
+
+[node name="SpawnPoint_32" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(60, 44)
+script = ExtResource("1_vyy0t")
+facing = "left"
+
+[node name="SpawnPoint_33" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(76, 28)
+script = ExtResource("1_vyy0t")
+facing = "right"
+
+[node name="SpawnPoint_34" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(28, 76)
+script = ExtResource("1_vyy0t")
+facing = "right"
+
+[node name="SpawnPoint_35" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(44, 148)
+script = ExtResource("1_vyy0t")
+
+[node name="SpawnPoint_36" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(132, 132)
+script = ExtResource("1_vyy0t")
+facing = "left"
+
+[node name="SpawnPoint_37" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(100, 68)
+script = ExtResource("1_vyy0t")
+facing = "right"
+
+[node name="SpawnPoint_38" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(132, 44)
+script = ExtResource("1_vyy0t")
+facing = "left"
+
+[node name="SpawnPoint_39" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(132, 108)
+script = ExtResource("1_vyy0t")
+facing = "left"
+
+[node name="SpawnPoint_40" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(132, 36)
+script = ExtResource("1_vyy0t")
+facing = "left"

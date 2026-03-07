@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuh31tt0gpbxe"]
+
+[ext_resource type="Script" uid="uid://4gv63x4uwfuh" path="res://scripts/pc.gd" id="1_qd3p6"]
+[ext_resource type="Texture2D" uid="uid://b385dwcdroc14" path="res://sprites/Network_Overflow.png" id="2_o5wjj"]
+
+[node name="PC" type="Node2D"]
+y_sort_enabled = true
+texture_filter = 1
+script = ExtResource("1_qd3p6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_o5wjj")
+region_enabled = true
+region_rect = Rect2(56.387264, 40.112076, 7.512905, 7.9190025)

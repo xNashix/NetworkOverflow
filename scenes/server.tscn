@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbx5fy2s0enm"]
+
+[ext_resource type="Script" uid="uid://dgsts1f6dnj4x" path="res://scripts/server.gd" id="1_ja7sr"]
+[ext_resource type="Texture2D" uid="uid://b385dwcdroc14" path="res://sprites/Network_Overflow.png" id="2_6bwch"]
+
+[node name="Server" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_ja7sr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_6bwch")
+region_enabled = true
+region_rect = Rect2(0.009128571, 40.082146, 15.970005, 15.847157)

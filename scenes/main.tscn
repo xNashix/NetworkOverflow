@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1tq1eyh84rhn"]
+
+[ext_resource type="Script" uid="uid://b6xavk3aqsmqe" path="res://scripts/main.gd" id="1_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://bb2gxlrqpq0wn" path="res://scenes/offices/office_01.tscn" id="2_sugp2"]
+[ext_resource type="Script" uid="uid://beteituhvmobw" path="res://scenes/camera.gd" id="3_sugp2"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_0wfyh")
+
+[node name="Office_01" parent="." instance=ExtResource("2_sugp2")]
+
+[node name="SpawnTimer" type="Timer" parent="."]
+autostart = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("3_sugp2")
+
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
