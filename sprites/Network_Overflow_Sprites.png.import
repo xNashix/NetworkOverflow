@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b385dwcdroc14"
-path="res://.godot/imported/Network_Overflow.png-5262243b20baf1f2ca27ecea91382d15.ctex"
+uid="uid://d1h0xias0o8yl"
+path="res://.godot/imported/Network_Overflow_Sprites.png-5c805c02c1e46a3aa8669b31c1e3ae13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Network_Overflow.png"
-dest_files=["res://.godot/imported/Network_Overflow.png-5262243b20baf1f2ca27ecea91382d15.ctex"]
+source_file="res://sprites/Network_Overflow_Sprites.png"
+dest_files=["res://.godot/imported/Network_Overflow_Sprites.png-5c805c02c1e46a3aa8669b31c1e3ae13.ctex"]
 
 [params]
 
