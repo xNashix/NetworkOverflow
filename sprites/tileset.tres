@@ -1,5 +1,6 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://k3mqn2xvujpu"]
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://k3mqn2xvujpu"]
 
+[ext_resource type="Texture2D" uid="uid://c5gpqfym5qf6v" path="res://sprites/NETWORK_OVERFLOW_TITLE.png" id="2_l1ax2"]
 [ext_resource type="Texture2D" uid="uid://d1h0xias0o8yl" path="res://sprites/Network_Overflow_Sprites.png" id="2_w034a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l1ax2"]
@@ -224,7 +225,12 @@ texture_region_size = Vector2i(8, 8)
 9:21/0 = 0
 10:21/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ok7ay"]
+texture = ExtResource("2_l1ax2")
+texture_region_size = Vector2i(8, 8)
+
 [resource]
 tile_size = Vector2i(8, 8)
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_l1ax2")
+sources/2 = SubResource("TileSetAtlasSource_ok7ay")
