@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://b8jb4qab32rui"]
+
+[ext_resource type="Texture2D" uid="uid://cu138ua4xo7ia" path="res://sprites/NETWORK_OVERFLOW_UI_BUTTONS.png" id="1_xsssc"]
+[ext_resource type="Script" uid="uid://b2aaka3pvtsmu" path="res://scenes/menu_button.gd" id="2_sd4kj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sd4kj"]
+atlas = ExtResource("1_xsssc")
+region = Rect2(32, 36, 112, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fpmxc"]
+atlas = ExtResource("1_xsssc")
+region = Rect2(32.621872, 143.92967, 111.40596, 31.659134)
+
+[node name="MenuButton" type="TextureButton"]
+texture_filter = 1
+offset_right = 40.0
+offset_bottom = 40.0
+keep_pressed_outside = true
+texture_normal = SubResource("AtlasTexture_sd4kj")
+texture_pressed = SubResource("AtlasTexture_fpmxc")
+script = ExtResource("2_sd4kj")

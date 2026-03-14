@@ -265,3 +265,10 @@ func _on_spawn_timer_timeout():
 	# Náhodný interval spawnovania
 	spawn_timer.wait_time = randf_range(1.0, 2.0)
 	spawn_timer.start()
+
+# -------------------------
+# EXIT TO TITLE SCREEN
+# -------------------------
+func _unhandled_input(event):
+	if event.is_action_pressed("ui_cancel"):
+		get_tree().change_scene_to_file("res://scenes/title_screen.tscn")
