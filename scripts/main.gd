@@ -13,6 +13,8 @@ var office_scenes = [
 ]
 # Timer, ktorý riadi spawnovanie PC a kancelárií
 @onready var spawn_timer: Timer = $SpawnTimer
+# Timer, ktorý riadi čas hráča v hre
+@onready var timer_label = $CanvasLayer/TimerLabel
 
 # Zoznam všetkých spawnutých kancelárií
 var offices = []
@@ -28,6 +30,8 @@ var office_used_points = {}
 var occupied_positions = []
 # Veľkosť jednej kancelárie (grid systém)
 const ROOM_SIZE = 160
+# Počiatočný čas hráča
+var elapsed_time: float = 0.0
 
 # Smery, do ktorých sa môže spawnúť nová kancelária
 var DIRECTIONS = [
@@ -262,9 +266,19 @@ func _on_spawn_timer_timeout():
 		print("ROOM FULL -> spawning new office")
 		spawn_new_office()
 	
-	# Náhodný interval spawnovania
 	spawn_timer.wait_time = randf_range(1.0, 2.0)
 	spawn_timer.start()
+	
+func _process(_delta):
+	elapsed_time += _delta
+
+	var total_seconds = int(elapsed_time)
+
+	var play_hours = int(total_seconds / 3600.0)
+	var play_minutes = int((total_seconds % 3600) / 60.0)
+	var play_seconds = total_seconds % 60
+
+	timer_label.text = "Time: %02d:%02d:%02d" % [play_hours, play_minutes, play_seconds]
 
 # -------------------------
 # EXIT TO TITLE SCREEN
