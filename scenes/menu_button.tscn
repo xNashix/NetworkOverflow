@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://b8jb4qab32rui"]
 
 [ext_resource type="Texture2D" uid="uid://cu138ua4xo7ia" path="res://sprites/NETWORK_OVERFLOW_UI_BUTTONS.png" id="1_xsssc"]
-[ext_resource type="Script" uid="uid://b2aaka3pvtsmu" path="res://scenes/menu_button.gd" id="2_sd4kj"]
+[ext_resource type="Script" uid="uid://b2aaka3pvtsmu" path="res://scripts/menu_button.gd" id="2_sd4kj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sd4kj"]
 atlas = ExtResource("1_xsssc")
