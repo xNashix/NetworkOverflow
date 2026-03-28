@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://cim7k72x5kyjj"]
+
+[ext_resource type="Script" uid="uid://dk754scdjil1h" path="res://scripts/leaderboard.gd" id="1_8lgqg"]
+[ext_resource type="Texture2D" uid="uid://xw5ik1ueyui6" path="res://sprites/title.png" id="1_wgq7h"]
+[ext_resource type="Texture2D" uid="uid://0bbxtaia78d8" path="res://sprites/NWOF_LEADERBOARD.png" id="2_8lgqg"]
+
+[node name="Leaderboard" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 641.0
+offset_bottom = 360.0
+script = ExtResource("1_8lgqg")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_wgq7h")
+
+[node name="Scores" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 176.0
+offset_top = 48.0
+offset_right = 449.0
+offset_bottom = 242.0
+texture = ExtResource("2_8lgqg")

@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkopoel5l8m6y"]
+
+[ext_resource type="Texture2D" uid="uid://xw5ik1ueyui6" path="res://sprites/title.png" id="1_e3q0r"]
+[ext_resource type="Script" uid="uid://bu3vc1p37pjwm" path="res://scripts/manual.gd" id="1_pxtqk"]
+[ext_resource type="Texture2D" uid="uid://b6q6voxr8fj8h" path="res://sprites/NWOF_MANUAL_SPLASH.png" id="2_pxtqk"]
+
+[node name="Manual" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 639.0
+offset_bottom = 360.0
+script = ExtResource("1_pxtqk")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_e3q0r")
+
+[node name="Instructions" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 176.0
+offset_top = 47.0
+offset_right = 449.0
+offset_bottom = 241.0
+texture = ExtResource("2_pxtqk")
