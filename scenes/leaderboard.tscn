@@ -29,3 +29,51 @@ offset_top = 48.0
 offset_right = 449.0
 offset_bottom = 242.0
 texture = ExtResource("2_8lgqg")
+
+[node name="Rows" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 57.0
+offset_right = 438.0
+offset_bottom = 259.0
+theme_override_constants/separation = 9
+
+[node name="Row1" type="Label" parent="Rows"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 9
+
+[node name="Row2" type="Label" parent="Rows"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 9
+
+[node name="Row3" type="Label" parent="Rows"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 9
+
+[node name="Row4" type="Label" parent="Rows"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 9
+
+[node name="Row5" type="Label" parent="Rows"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 9
+
+[node name="Row6" type="Label" parent="Rows"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 9
+
+[node name="Row7" type="Label" parent="Rows"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 9
+
+[node name="Row8" type="Label" parent="Rows"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 9
+
+[node name="Row9" type="Label" parent="Rows"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 9
+
+[node name="Row10" type="Label" parent="Rows"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 9
