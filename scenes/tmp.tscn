@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bluafi76w26rn"]
+
+[ext_resource type="Texture2D" uid="uid://d1h0xias0o8yl" path="res://sprites/Network_Overflow_Sprites.png" id="1_r3ink"]
+
+[node name="Tmp" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_r3ink")
+region_enabled = true
+region_rect = Rect2(40, 64, 8, 8)
